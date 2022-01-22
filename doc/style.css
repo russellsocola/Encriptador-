@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	background-color: lightgray;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+header{
+	display: flex;
+	min-height: 60px;
+	background-color: #7f69a5;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
+.logo{
+	display: flex;
+	align-items: center;
+}
+.logo img{
+	height: 100px;
+	margin-right: 10px;
+
+}
+
+nav a{
+	font-weight: 600;
+	padding-right: 10px;
+}
+nav a:hover{
+	color: white;
+
+}
+
+@media(max-width: 500px){
+	header{
+		flex-direction: column;
+	}
+
+	nav{
+		padding: 10px 0px;
+	}
+}
+input.clipboard{
+	width: 180px;
+	border: 0;
+	
+}
+.main {
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.titulo {
+  padding: 15px;
+  width: 30vw;
+  margin: auto;
+
+}
+.box {
+  padding: 10px;
+  margin: 0 10px 0 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  border-radius: 0.7em;
+  width: auto;
+  height: auto;
+}
+.btn {
+  border: 0;
+  color: white;
+  font-weight: bold;
+  background-color: blue;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 0.5em;
+}
+
+.text-input {
+  border-radius: 0.5em;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  display: block;
+  padding: 0.5em;
+  width: auto;
+  height: auto;
+}
+.footer{
+  height: auto;
+  width: auto;
+  background-color: #0a141d;
+}
+.footer .grupo-1{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+.footer .grupo-1 .caja figure{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .grupo-1 .caja figure img{
+ width: 250px;
+}
+.footer .grupo-1 .caja h2{
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.footer .grupo-1 .caja p{
+  color: #efefef;
+  margin-bottom: 10px;
+}
+.footer .grupo-1 .caja .redes a{
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #0d2033;
+  text-align: center;
+  transition: all 300ms ease;
+}
+
+.footer .grupo-1 .caja .redes a:hover{
+  color: aqua;
+}
+
+.footer .grupo-2{
+  background-color: #0a1a2a;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+
+}
+.footer .grupo-2 small{
+  font-size: 15px
+}
+@media screen and(max-width: 500px){
+  .footer .grupo-1{
+  width: 90%;
+  grid-template-columns: repeat(1,1fr);
+  grid-gap: 30px;
+  padding: 35px 0px;
+}
+.footer .grupo-1 .caja .redes a{
+  display: inline-block;
+  text-decoration: none;
+  width: 70%;
+  color: #fff;
+  background-color: #0d2033;
+  text-align: auto;
+  transition: all 300ms ease;
+}
+.footer .grupo-1 .caja figure{
+  height: 80%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+}
+

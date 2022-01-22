@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Encriptador</title>
+	<script type="text/javascript" src="code.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	
+		<header>
+			<a href="#" class="logo">
+				<img src="logo.jpg" alt="logo de la pagina" >
+				<h2 class="paginaderussell">Encriptador</h2>
+			</a>
+
+			<nav>
+				<a href="file:///C:/Users/Russel%20Pc/Desktop/desafio/index.html" class="nav-link">Inicio</a>
+				<a href="https://www.facebook.com/russellsocola/" class="nav-link">Contacto</a>
+			</nav>
+		</header>
+		
+		<main>
+
+			<section class="form box">
+				<div action="">
+					<label for="input-texto">Solo letras minúsculas, sin acento</label>
+					<input class="text-input" id="itext" type="text"/>
+					<br>
+					<button class="btn" type="submit" onclick="encriptar(this)">Encriptar</button>
+					<button class="btn" type="submit" onclick="desencriptar(this)">Desencriptar</button>
+				</div>
+			</section>
+			<br>
+			<section class="msg box">
+				<div>
+					<h2>Mensaje encriptado</h2>
+					<textarea class="text-input" id="resultado"></textarea>
+					<button class="btn" onclick="copiarporta();">Copiar</button>
+				</div>
+			</section>	
+		</main>
+		<br>
+		<footer class="footer" >
+			<div class="grupo-1">
+				<div class="caja">
+					<figure>
+						<a href="">
+							<img src="logo.jpg" alt="">
+						</a>
+					</figure>				
+				</div>
+
+				<div class="caja">
+					<h2>SOBRE NOSOTROS</h2>
+					<P> Estudiante del grupo Alura Latam 2022.</P>
+					<P> Desarrollando este sitio con html,css,java,golang.</P>
+				</div>
+
+				<div class="caja">
+					<h2>Sigueme:</h2>
+					<div class="redes">
+						<a href="#" class="fa fa-facebook"></a>
+						<a href="#" class="fa fa-instagram"></a>
+						<a href="#" class="fa fa-twitter"></a>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="grupo-2">
+				<small>&copy;2022 <b>Russell N.S.R.</b> - Todos los derechos Reservados.</small>
+			</div>
+		</footer>
+</body>
