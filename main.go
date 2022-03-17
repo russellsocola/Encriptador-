@@ -6,7 +6,7 @@ import (
 )
 
 func main(){
-	fs:=http.FileServer(http.Dir("./doc"))
+	fs:=http.FileServer(http.Dir("./doc./index.html"))
 
 	http.Handle("/", fs);
 	log.Println("servidor en curso")
